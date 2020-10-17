@@ -2,7 +2,7 @@ while 1
     puts 'Enter a number>>'
     begin
         num = Kernel.gets.match(/\d+/)[0]
-    rescue StandardError=>e
+    rescue Exception=>e
         puts "Erroneus input!"
         puts e
         puts "\tTry again...\n"
